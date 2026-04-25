@@ -12,10 +12,14 @@ desktop.ini
 *.swo
 *~
 
-# Keys — never commit these
+# Keys - never commit these
 *.pem
 *.key
 
 # Environment files
 .env
 .env.local
+
+# Node / npm
+node_modules/
+*.log

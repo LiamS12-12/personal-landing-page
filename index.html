@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam Sipp — Personal Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>
     <header>
@@ -17,28 +18,38 @@
     </header>
 
     <main>
-        <section class="gallery">
+        <section class="gallery" aria-label="Personal photo gallery">
             <div class="photo">
-                <img src="images/liamnjoee.jpg" alt="My wife and I">
-                <p>This is My lovley wife Joee and I when we got engaged in the UK</p>
+                <img class="gallery__thumb" src="images/liamnjoee.jpg" alt="My wife Joee and I when we got engaged in the UK">
+                <p>This is my lovely wife Joee and I when we got engaged in the UK.</p>
             </div>
+
             <div class="photo">
-                <img src="images/liamdad.jpg" alt="Montgomery">
-                <p>This is one of the happiest moments of my life, holding my first born son born just a few months ago</p>
+                <img class="gallery__thumb" src="images/liamdad.jpg" alt="One of the happiest moments of my life, holding my first born son">
+                <p>This is one of the happiest moments of my life, holding my first born son born just a few months ago.</p>
             </div>
+
             <div class="photo">
-                <img src="images/jacknliam.jpg" alt="Our dog Jack">
-                <p>This is one of our three dogs, Jack a black lab we rescued.</p>
+                <img class="gallery__thumb" src="images/jacknliam.jpg" alt="Our dog Jack, a black lab we rescued">
+                <p>This is one of our three dogs, Jack, a black lab we rescued.</p>
             </div>
+
             <div class="photo">
-                <img src="images/travel.jpg" alt="Italian Coast">
-                <p>My wife and I love to travel, this is us on the Italian Coast</p>
+                <img class="gallery__thumb" src="images/travel.jpg" alt="My wife and I traveling on the Italian Coast">
+                <p>My wife and I love to travel. This is us on the Italian Coast.</p>
             </div>
         </section>
     </main>
 
+    <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <img class="lightbox__img" src="" alt="">
+        <div class="lightbox__caption"></div>
+    </div>
+
     <footer>
         <p>Deployed to AWS S3 — Cloud Web App Engineering, 2026</p>
     </footer>
+
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
