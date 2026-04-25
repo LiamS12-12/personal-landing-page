@@ -13,9 +13,10 @@ const state = {
   isOpen: false,
   index: 0,
   images: [
-    { src: 'images/sample-1.svg', caption: 'Sample image one — replace with your own' },
-    { src: 'images/sample-2.svg', caption: 'Sample image two — a second photo' },
-    { src: 'images/sample-3.svg', caption: 'Sample image three — a third' },
+    { src: 'images/liamnjoee.jpg', caption: 'My wife Joee and I when we got engaged in the UK.' },
+    { src: 'images/liamdad.jpg', caption: 'One of the happiest moments of my life, holding my first born son.' },
+    { src: 'images/jacknliam.jpg', caption: 'Our dog Jack, a black lab we rescued.' },
+    { src: 'images/travel.jpg', caption: 'My wife and I traveling on the Italian Coast.' },
   ],
 };
 
